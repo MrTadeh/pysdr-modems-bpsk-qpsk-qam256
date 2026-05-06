@@ -1,0 +1,19 @@
+BPSK modem report
+==================
+samples/symbol      : 8
+RRC roll-off / span : 0.35 / 11
+Eb/N0 (dB)          : 25.0
+True freq offset    : 0.003000 cycles/sample
+Estimated freq off  : 0.002998 cycles/sample
+True phase offset   : 1.2000 rad
+Info bits           : 4000
+Coded symbols       : 7113
+
+BER pre-FEC         : 0.0000e+00
+BER post-FEC (all)  : 0.0000e+00
+BER post-FEC (info) : 0.0000e+00
+
+Bit recovery uses differential precoding/decoding so the system tolerates
+180-degree polarity ambiguity AND mid-run Costas cycle slips.  This is the
+classic DBPSK-precoded-BPSK construction and matches the simulated-vs-theory
+curve in ber_vs_ebn0.png.

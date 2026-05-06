@@ -1,0 +1,20 @@
+256-QAM modem report
+====================
+samples/symbol      : 8
+RRC roll-off / span : 0.35 / 11
+Eb/N0 (dB)          : 25.0
+True freq offset    : 0.003000 cycles/sample
+Estimated freq off  : 0.003006 cycles/sample
+True phase offset   : 1.2000 rad
+Info bits           : 4000
+QAM symbols         : 931
+
+SER pre-FEC         : 0.0000e+00
+BER pre-FEC         : 0.0000e+00
+BER post-FEC (all)  : 0.0000e+00
+BER post-FEC (info) : 0.0000e+00
+Quadrant rotation   : 0 * pi/2
+
+Carrier recovery uses 4th-power coarse acquisition followed by decision-
+directed Costas tracking.  4-fold (90 degrees) phase ambiguity is resolved
+by a known preamble of 56 256-QAM symbols.
