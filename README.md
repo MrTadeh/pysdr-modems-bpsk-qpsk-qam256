@@ -33,6 +33,12 @@ with the Hamming(7,4) FEC crossover visible around 5–6 dB:
 
 ![BPSK BER curve](bpsk_out/ber_vs_ebn0.png)
 
+EVM vs Eb/N0 (5 / 10 / 15 dB) — measured EVM matches the theoretical
+`1/√(Es/N0)` lower bound to ~0.1 % across the range; yellow ✕ marks the
+true TX symbol positions:
+
+![BPSK EVM](bpsk_out/evm_vs_snr.png)
+
 Eye diagram (200 symbols overlaid post-sync) — wide-open eye:
 
 ![BPSK eye](bpsk_out/eye_diagram.png)
@@ -47,6 +53,12 @@ diagonals → clean steady-state:
 BER vs Eb/N0:
 
 ![QPSK BER curve](qpsk_out/ber_vs_ebn0.png)
+
+EVM vs Eb/N0 (5 / 10 / 15 dB) — DQPSK is rotationally invariant so the
+post-Costas constellation is aligned to its closest 90° multiple before
+the EVM measurement:
+
+![QPSK EVM](qpsk_out/evm_vs_snr.png)
 
 Eye diagram (I and Q):
 
@@ -63,8 +75,12 @@ BER vs Eb/N0, hugging Gray-coded 256-QAM theory:
 
 ![256-QAM BER curve](qam256_out/ber_vs_ebn0.png)
 
-Eye diagram — much more open than BPSK/QPSK because every grid level
-gets a trace:
+EVM vs Eb/N0 (20 / 25 / 30 dB) — clean clusters at each of the 256 grid
+points, EVM tracks `1/√(Es/N0)` theory to within ~0.2 %:
+
+![256-QAM EVM](qam256_out/evm_vs_snr.png)
+
+Eye diagram — multi-level (every grid level gets a trace):
 
 ![256-QAM eye](qam256_out/eye_diagram.png)
 
